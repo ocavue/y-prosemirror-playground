@@ -7,9 +7,9 @@ import {
   undo,
   redo,
 } from "y-prosemirror";
-import { EditorState } from "prosemirror-state";
+import { EditorState, Plugin } from "prosemirror-state";
 import { EditorView } from "prosemirror-view";
-import { schema } from "./schema.js";
+import { schema } from "./schema";
 import { exampleSetup } from "prosemirror-example-setup";
 import { keymap } from "prosemirror-keymap";
 
@@ -39,18 +39,18 @@ window.addEventListener("load", () => {
   });
   document.body.insertBefore(editorContainer, null);
 
-  const connectBtn = /** @type {HTMLElement} */ (
-    document.getElementById("y-connect-btn")
-  );
-  connectBtn.addEventListener("click", () => {
-    if (provider.shouldConnect) {
-      provider.disconnect();
-      connectBtn.textContent = "Connect";
-    } else {
-      provider.connect();
-      connectBtn.textContent = "Disconnect";
-    }
-  });
+  const connectBtn = document.getElementById("y-connect-btn");
+  if (connectBtn) {
+    connectBtn.addEventListener("click", () => {
+      if (provider.shouldConnect) {
+        provider.disconnect();
+        connectBtn.textContent = "Connect";
+      } else {
+        provider.connect();
+        connectBtn.textContent = "Disconnect";
+      }
+    });
+  }
 
   // @ts-ignore
   window.example = { provider, ydoc, type, prosemirrorView };

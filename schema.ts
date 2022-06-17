@@ -1,8 +1,8 @@
-import { Schema } from "prosemirror-model";
+import { MarkSpec, NodeSpec, Schema } from "prosemirror-model";
 
 const brDOM = ["br"];
 
-const calcYchangeDomAttrs = (attrs, domAttrs = {}) => {
+const calcYchangeDomAttrs = (attrs, domAttrs: any = {}) => {
   domAttrs = Object.assign({}, domAttrs);
   if (attrs.ychange !== null) {
     domAttrs.ychange_user = attrs.ychange.user;
@@ -13,7 +13,7 @@ const calcYchangeDomAttrs = (attrs, domAttrs = {}) => {
 
 // :: Object
 // [Specs](#model.NodeSpec) for the nodes defined in this schema.
-export const nodes = {
+export const nodes: NodeSpec = {
   // :: NodeSpec The top level document node.
   doc: {
     content: "block+",
@@ -150,7 +150,7 @@ const strongDOM = ["strong", 0];
 const codeDOM = ["code", 0];
 
 // :: Object [Specs](#model.MarkSpec) for the marks in the schema.
-export const marks = {
+export const marks: MarkSpec = {
   // :: MarkSpec A link. Has `href` and `title` attributes. `title`
   // defaults to the empty string. Rendered and parsed as an `<a>`
   // element.
