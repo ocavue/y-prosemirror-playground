@@ -7,16 +7,14 @@
     "dev": "vite dev --port 3015"
   },
   "license": "ISC",
-  "devDependencies": {
-    "vite": "^2.9.12",
-    "y-prosemirror": "^1.1.2"
-  },
   "dependencies": {
     "prosemirror-example-setup": "^1.1.2",
     "prosemirror-keymap": "^1.2.0",
     "prosemirror-model": "^1.18.1",
     "prosemirror-state": "^1.4.0",
     "prosemirror-view": "^1.26.1",
+    "vite": "^2.9.12",
+    "y-prosemirror": "^1.1.2",
     "y-webrtc": "^10.2.3",
     "yjs": "^13.5.38"
   }
