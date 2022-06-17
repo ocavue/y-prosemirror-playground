@@ -7,7 +7,7 @@ specifiers:
   prosemirror-state: ^1.4.0
   prosemirror-view: ^1.26.1
   vite: ^2.9.12
-  y-prosemirror: ^1.1.2
+  y-prosemirror: 1.1.2
   y-webrtc: ^10.2.3
   yjs: ^13.5.38
 
