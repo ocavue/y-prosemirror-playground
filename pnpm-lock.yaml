@@ -7,7 +7,7 @@ specifiers:
   prosemirror-state: ^1.4.0
   prosemirror-view: ^1.26.1
   vite: ^2.9.12
-  y-prosemirror: 1.1.2
+  y-prosemirror: 1.0.20
   y-webrtc: ^10.2.3
   yjs: ^13.5.38
 
@@ -18,7 +18,7 @@ dependencies:
   prosemirror-state: 1.4.0
   prosemirror-view: 1.26.1
   vite: 2.9.12
-  y-prosemirror: 1.1.2_dd4e814c690e992aabdae4c476e9237b
+  y-prosemirror: 1.0.20_dd4e814c690e992aabdae4c476e9237b
   y-webrtc: 10.2.3
   yjs: 13.5.38
 
@@ -546,14 +546,14 @@ packages:
     dev: false
     optional: true
 
-  /y-prosemirror/1.1.2_dd4e814c690e992aabdae4c476e9237b:
-    resolution: {integrity: sha512-+5Pf30ugJIatxy8DAmRMhkiYCI2xxBg+T5Btg9G/7v5La0I5WpR/GT/Kg8RGLv8LiG4/c4bVAEEM+efyVehLIQ==}
+  /y-prosemirror/1.0.20_dd4e814c690e992aabdae4c476e9237b:
+    resolution: {integrity: sha512-LVMtu3qWo0emeYiP+0jgNcvZkqhzE/otOoro+87q0iVKxy/sMKuiJZnokfJdR4cn9qKx0Un5fIxXqbAlR2bFkA==}
     peerDependencies:
       prosemirror-model: ^1.7.1
       prosemirror-state: ^1.2.3
       prosemirror-view: ^1.9.10
       y-protocols: ^1.0.1
-      yjs: ^13.5.38
+      yjs: ^13.3.2
     dependencies:
       lib0: 0.2.51
       prosemirror-model: 1.18.1
